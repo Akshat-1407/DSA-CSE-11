@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include "../intLinkedList.h"
+#include "../intSinglyLinkedList.h"
 
 node* intersectionLL(node* head1, node* head2) {
     node* P = head1;

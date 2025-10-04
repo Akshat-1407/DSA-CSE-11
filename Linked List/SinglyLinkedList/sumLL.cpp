@@ -3,7 +3,7 @@
 #include <string.h>
 #include <vector>
 #include <algorithm>
-#include "intLinkedList.h"
+#include "intSinglyLinkedList.h"
 
 node* addLL(node* head1, node* head2) {
     reverseLL(&head1);

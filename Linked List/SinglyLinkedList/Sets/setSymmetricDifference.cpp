@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include "../intLinkedList.h"
+#include "../intSinglyLinkedList.h"
 
 // A Δ B = (A ∪ B) - (A ∩ B)
 // A Δ B = (A-B) ∪ (B-A)

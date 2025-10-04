@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include "../intLinkedList.h"
+#include "../intSinglyLinkedList.h"
 
 // A-B
 node* setDifferenceLL(node* head1, node* head2) {
