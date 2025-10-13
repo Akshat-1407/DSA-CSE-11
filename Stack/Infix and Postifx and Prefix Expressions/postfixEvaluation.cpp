@@ -3,7 +3,6 @@
 #include <cmath>
 using namespace std;
 
-
 int evaluate(int x, int y, char symbol) {
     switch(symbol) {
         case('+'): return x+y;

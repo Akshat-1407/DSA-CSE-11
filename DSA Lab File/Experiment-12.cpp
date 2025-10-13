@@ -1,3 +1,7 @@
+// Name = Akshat Rastogi    Class = CSE-11   RollNo = 2400320100133
+
+// Doubly Linked List Primitive Operation
+
 #include <iostream>
 #include <stdlib.h>
 using namespace std;

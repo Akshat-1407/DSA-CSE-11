@@ -1,59 +1,7 @@
 #include <iostream>
 #include <vector>
-#define STACKSIZE 50
+#include "../charStack.h"
 using namespace std;
-
-struct STACK {
-    char item[STACKSIZE];
-    int Top;
-};
-
-
-void Initialize(STACK &Stack) {
-    Stack.Top = -1;
-}
-
-
-bool isEmpty(STACK &Stack) {
-    if(Stack.Top == -1) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-
-void push(STACK &Stack, char x) {
-    if(Stack.Top == STACKSIZE-1) {        
-        cout<<"Stack Overflows"<<endl;
-        exit(1);
-    }
-    else {
-        Stack.Top++;
-        Stack.item[Stack.Top] = x;
-    }
-}
-
-
-char pop(STACK &Stack) {
-    char x;
-    if (isEmpty(Stack)) {
-        cout<<"Stack Underflows"<<endl;
-        exit(1);
-    }
-    else {      
-        x = Stack.item[Stack.Top];
-        Stack.Top--;
-    }
-    return x;
-}
-
-
-char StackTop(STACK &Stack) {
-    return Stack.item[Stack.Top];
-}
-
 
 bool precedence(char op1, char op2) {
     if (op1 == '(' || op2 == '(') {
@@ -80,7 +28,7 @@ bool precedence(char op1, char op2) {
 int main() {
     struct STACK opStack;
 
-    Initialize(opStack);
+    Initialize(&opStack);
 
     char infix[30];
     vector<char> postfix;
@@ -97,21 +45,21 @@ int main() {
             postfix.push_back(symbol);
         }
         else {
-            while (!isEmpty(opStack) && precedence(StackTop(opStack), symbol)) {
-                char x = pop(opStack);
+            while (!isEmpty(&opStack) && precedence(StackTop(&opStack), symbol)) {
+                char x = pop(&opStack);
                 postfix.push_back(x);
             }
             if (symbol != ')')
-                push(opStack, symbol); 
+                push(&opStack, symbol); 
             else {
-                pop(opStack);
+                pop(&opStack);
             }
         }
         i++;
     }
 
-    while (!isEmpty(opStack)) {
-        char x = pop(opStack);
+    while (!isEmpty(&opStack)) {
+        char x = pop(&opStack);
         postfix.push_back(x);
     }
 

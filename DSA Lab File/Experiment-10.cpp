@@ -1,3 +1,7 @@
+// Name = Akshat Rastogi    Class = CSE-11   RollNo = 2400320100133
+
+// Polynomial Arithmetic (Addition, Subtraction, Multiplication)
+
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
@@ -43,7 +47,6 @@ void insBeg(node** head, int coef, int exp) {
     p->next = *head;
     *head = p;
 }
-
 
 
 void reverseLL(node** head) {

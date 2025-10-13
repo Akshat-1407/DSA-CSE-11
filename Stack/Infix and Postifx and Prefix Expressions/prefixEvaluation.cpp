@@ -39,7 +39,7 @@ void prefixExpression(vector<char> postfix) {
 
 int main() {
 
-    vector<char> expression = {'+', '*', '3', '4', '5'};
+    vector<char> expression = {'+', '*', '2', '-', '4', '3', '6'};
     
     reverse(expression.begin(), expression.end());
     prefixExpression(expression);
