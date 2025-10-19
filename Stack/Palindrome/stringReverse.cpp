@@ -1,7 +1,7 @@
 // Program to Reverse the given String using Stack
 
 #include <iostream>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 

@@ -1,7 +1,7 @@
 // Program to check whether the given String is palindrome or not using Stack
 
 #include <iostream>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 int main() {

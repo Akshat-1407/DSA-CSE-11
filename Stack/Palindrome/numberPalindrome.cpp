@@ -1,7 +1,7 @@
 // Program to check if the given number is a palindrome using stacks
 
 #include <iostream>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 int main() {

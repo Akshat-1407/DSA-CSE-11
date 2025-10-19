@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 bool precedence(char op1, char op2) {

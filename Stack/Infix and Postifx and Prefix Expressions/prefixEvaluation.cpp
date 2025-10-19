@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../intStack.h"
+#include "../arrayIntStack.h"
 #include <vector>
 #include <algorithm>
 #include <cmath>

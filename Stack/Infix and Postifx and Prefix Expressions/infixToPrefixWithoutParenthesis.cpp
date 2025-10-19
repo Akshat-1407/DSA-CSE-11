@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string.h>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 

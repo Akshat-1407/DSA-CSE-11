@@ -131,35 +131,4 @@ int delAfter(node** Q) {
 }
 
 
-int main() {
-    node* head = NULL;
- 
-    // Test insBeg and insEnd
-    insBeg(&head, 2);
-    insBeg(&head, 1);
-    insEnd(&head, 3);
-    cout << "After insertions: ";
-    Traversal(head);
-
-    // Test insAfter
-    node* p = head->next;
-    insAfter(&p, 4);
-    cout << "After insertion: ";
-    Traversal(head);
-
-    // Test delBeg and delEnd
-    delBeg(&head);
-    cout << "After deleting from beginning: ";
-    Traversal(head);
-    delEnd(&head);
-    cout << "After deleting from end: ";
-    Traversal(head);
-
-    // Test delAfter
-    node* q = head;
-    delAfter(&q);
-    cout << "After deleting: ";
-    Traversal(head);
-}
-
 

@@ -1,7 +1,7 @@
 // Program to check the validity of Parenthesized Arithmetic Expression using Stack
 
 #include <iostream>
-#include "../charStack.h"
+#include "../arrayCharStack.h"
 using namespace std;
 
 int main() {
